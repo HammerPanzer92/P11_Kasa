@@ -1,0 +1,28 @@
+nav{
+    margin: 45px 100px 50px 100px;
+    display: flex;
+    height: 68px;
+
+    img{
+        height: 100%;
+        width: auto;
+    }
+
+    div:first-child{
+        flex-grow: 2;
+    }
+
+    div:last-child{
+        display: flex;
+        align-items: center;
+        gap: 57px;
+    }
+
+    a{
+        color: black;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 34.22px;
+    }
+}

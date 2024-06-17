@@ -4,7 +4,7 @@ function Nav() {
   return (
     <nav>
       <div>
-        <img alt="logo de Kasa"></img>
+        <img src="/logo_kasa.png" alt="logo de Kasa"></img>
       </div>
       <div>
         <a>Accueil</a>
