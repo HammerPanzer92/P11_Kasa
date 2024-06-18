@@ -1,0 +1,25 @@
+@use "vars";
+@use "mixins";
+
+#errorNotFound{
+    color: vars.$main_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 139px;
+    padding-bottom: 139px;
+
+    h1{
+        @include mixins.font(288px, 410.69px, 700);
+        text-align: center;
+    }
+
+    p{
+        @include mixins.font(36px, 51.34px);
+    }
+
+    a{
+        color: black;
+        @include mixins.font(18px, 25.67px);
+    }
+}

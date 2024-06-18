@@ -1,0 +1,8 @@
+@use "vars";
+
+@mixin font($size, $line-height, $weight: 500, $family: vars.$main_font){
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+};

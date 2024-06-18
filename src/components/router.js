@@ -1,18 +1,21 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 
 import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
 import App from '../App';
+import PageNotFound from './404';
 
-// Création du router (export vers index.js ?)
+
 const router = createBrowserRouter([
     {
       path: "/",
       element: <App />,      
-    },
+    },{
+      path: "*",
+      element: <PageNotFound />,      
+    }
 ]);
 
 function BrowserRouter(){
