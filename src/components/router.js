@@ -4,14 +4,14 @@ import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
-import App from '../App';
 import PageNotFound from './404';
+import Accueil from './Acceuil';
 
 
 const router = createBrowserRouter([
     {
       path: "/",
-      element: <App />,      
+      element: <Accueil />,      
     },{
       path: "*",
       element: <PageNotFound />,      
