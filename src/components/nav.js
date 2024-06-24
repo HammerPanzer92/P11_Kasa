@@ -1,9 +1,8 @@
 import * as React from "react";
-import { useLocation, Link } from "react-router-dom";
+import Linknav from "./Linknav";
 
 function Nav() {
 
-  const location = useLocation();
 
   return (
     <nav>
@@ -11,7 +10,7 @@ function Nav() {
         <img src="/logo_kasa.png" alt="logo de Kasa"></img>
       </div>
       <div>
-        <Link to="/">Accueil</Link>
+        <Linknav to="/" name="Acceuil" />
         <a>A Propos</a>
       </div>
     </nav>

@@ -12,7 +12,7 @@
 
     border-radius: 10px;
 
-    h2{
+    a{
         @include mixins.font(18px, 25.67px, 700);
         height: 52px;
         margin: auto 20px 20px 20px;

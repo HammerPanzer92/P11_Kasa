@@ -24,4 +24,8 @@ nav{
         color: black;
         @include mixins.font(24px, 34.22px);
     }
+
+    .active-link{
+        text-decoration: underline;
+    }
 }
