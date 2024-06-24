@@ -2,14 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/styles.scss';
 import reportWebVitals from './reportWebVitals';
-import BrowserRouter from './components/router';
-import Nav from './components/nav';
-import Footer from './components/footer';
+import BrowserRouter from './components/Router';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nav />
     <BrowserRouter />
     <Footer />
   </React.StrictMode>

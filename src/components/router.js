@@ -4,7 +4,7 @@ import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
-import PageNotFound from './404';
+import PageNotFound from './PageNotFound';
 import Accueil from './Acceuil';
 
 

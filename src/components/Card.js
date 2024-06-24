@@ -1,9 +1,11 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 function Card(props) {
   return (
   <div class="card-container">
-    <h2>{props.title}</h2>
+
+    <Link to="/test">{props.title}</Link>
   </div>
 );
 }
