@@ -19,7 +19,9 @@
         text-shadow: 4px 4px 0px black;
         color: white;
         position: absolute;
-        right: 25%;
-        top: 15%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
     }
 }
