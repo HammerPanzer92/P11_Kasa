@@ -1,15 +1,19 @@
-.carousel-container{
+.carousel-container {
     background-color: #f1f1f1;
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
+    height: 415px;
+    width: 1240px;
+    border-radius: 25px;
+    
 
-    .carousel-item{
-        height: 20rem;
+    .carousel-item {
         min-width: 100%;
         display: flex;
+        object-fit: cover;
         align-items: center;
         justify-content: center;
-        transition: 1s cubic-bezier(0.39,0.575,0.565,1);
+        transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
     }
 }

@@ -10,17 +10,17 @@ function Logement() {
 
   const logement = listeLogements.find((element) => element.id === params.id);
 
-  console.log(logement);
+  const nomPrenom = logement.host.name.split(" ");
 
   return (
     <>
       <Nav />
       <main id="logement">
-        <Carousel />
+        <Carousel images={logement.pictures}/>
         <div className="logement_profil">
             <div>
-                <h1>Nom logement</h1>
-                <p>Location, Logement</p>
+                <h1>{logement.title}</h1>
+                <p>{logement.location}</p>
                 <div className="tagslist">
                     <div>
                         <p>Tag</p>
@@ -30,8 +30,8 @@ function Logement() {
             </div>
             <div>
                 <div className="profil_container">
-                    <p>Prénom <br/>Nom</p>
-                    <img src="" alt="Photo de profil" />
+                    <p>{nomPrenom[0]} <br/>{nomPrenom[1]}</p>
+                    <img src={logement.host.picture} alt="Photo de profil" />
                 </div>
                 <div className="rating">
                     <p>Note : mettre SVG étoiles</p>
