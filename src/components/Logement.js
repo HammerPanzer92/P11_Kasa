@@ -2,6 +2,9 @@ import * as React from "react";
 import { Navigate, useParams } from "react-router-dom";
 import Nav from "./Nav";
 import Carousel from "./Carousel";
+import Tagslist from "./Tagslist";
+import Profil from "./Profil";
+import Rating from "./Rating";
 
 function Logement() {
   const params = useParams();
@@ -30,24 +33,11 @@ function Logement() {
           <div>
             <h1>{logement.title}</h1>
             <p>{logement.location}</p>
-            <div className="tagslist">
-              <div>
-                <p>Tag</p>
-                <p>Tag 2</p>
-              </div>
-            </div>
+            <Tagslist tags={logement.tags}/>
           </div>
           <div>
-            <div className="profil_container">
-              <p>
-                {nomPrenom[0]} <br />
-                {nomPrenom[1]}
-              </p>
-              <img src={logement.host.picture} alt="Photo de profil" />
-            </div>
-            <div className="rating">
-              <p>Note : mettre SVG étoiles</p>
-            </div>
+            <Profil name={nomPrenom} picture={logement.host.picture}/>
+            <Rating score={parseInt(logement.rating)}/>
           </div>
         </div>
         <div className="logement_info"></div>
