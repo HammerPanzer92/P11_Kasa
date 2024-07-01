@@ -12,14 +12,14 @@ import Logement from './Logement';
 const router = createBrowserRouter([
     {
       path: "/",
-      element: <Accueil />,      
+      element: <Accueil />,
     },
     {
       path: "/logement/:id",
       element: <Logement />,
     },{
       path: "*",
-      element: <PageNotFound />,      
+      element: <PageNotFound />,
     }
 ]);
 

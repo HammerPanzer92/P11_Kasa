@@ -5,6 +5,7 @@ import Carousel from "./Carousel";
 import Tagslist from "./Tagslist";
 import Profil from "./Profil";
 import Rating from "./Rating";
+import InfoLogement from "./InfoLogement";
 
 function Logement() {
   const params = useParams();
@@ -40,7 +41,7 @@ function Logement() {
             <Rating score={parseInt(logement.rating)}/>
           </div>
         </div>
-        <div className="logement_info"></div>
+        <InfoLogement description={logement.description} equipements={logement.equipments} />
       </main>
     </>
   );
