@@ -2,14 +2,13 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 function Card(props) {
-
   const route = "/logement/" + props.id;
 
   return (
-  <div class="card-container">
-    <Link to={route} >{props.title}</Link>
-  </div>
-);
+    <Link to={route}>
+      <div class="card-container"><p>{props.title}</p></div>
+    </Link>
+  );
 }
 
 export default Card;

@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import {
     createBrowserRouter,
+    Navigate,
     RouterProvider,
   } from "react-router-dom";
 import PageNotFound from './PageNotFound';
@@ -17,9 +18,13 @@ const router = createBrowserRouter([
     {
       path: "/logement/:id",
       element: <Logement />,
+    },
+    {
+      path: "/404",
+      element: <PageNotFound />,
     },{
       path: "*",
-      element: <PageNotFound />,
+      element: <Navigate replace={true} to="/404" />,
     }
 ]);
 

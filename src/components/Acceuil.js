@@ -11,7 +11,7 @@ function Accueil() {
       <Nav />
       <main id="accueil">
         <Banner
-          src="/logo_kasa.png"
+          src="/banner.png"
           text="Chez vous, partout et ailleurs"
           alt="Banniére"
         />
