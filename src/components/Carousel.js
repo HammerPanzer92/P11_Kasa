@@ -18,11 +18,11 @@ const Carousel = (props) => {
     return setCurrentIndex(currentIndex + increment);
   };
 
-  const btnPlus = (e) => {
+  const btnPlus = () => {
     carouselInfiniteScroll(1);
   };
 
-  const btnMinus = (e) => {
+  const btnMinus = () => {
     carouselInfiniteScroll(-1);
   };
 
@@ -34,14 +34,16 @@ const Carousel = (props) => {
             <img
               className="carousel-item"
               src={item}
+              alt="Logement"
               style={{ transform: `translate(-${currentIndex * 100}%)` }}
               key={index}
             />
           );
         })}
+        <div className="nextBtn" onClick={btnPlus}><img src="/arrow.svg" alt="Image suivante"/></div>      
+      <div className="prevBtn" onClick={btnMinus}><img src="/arrow.svg" alt="Image suivante"/></div>    
       </div>
-      <button onClick={btnPlus}>Next</button>      
-      <button onClick={btnMinus}>Prev</button>
+        
     </>
   );
 };

@@ -7,6 +7,15 @@
 @use "carousel";
 @use "logement";
 
+body{
+    margin: 0;
+}
+
+main{    
+    margin-left : 100px;
+    margin-right: 100px;
+}
+
 a{
     text-decoration: none;
     color: black;

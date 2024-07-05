@@ -18,7 +18,7 @@ function Rating(props) {
   };
 
 
-  return <div className="rating_container">{starsDOM()}</div>;
+  return <div className="rating">{starsDOM()}</div>;
 }
 
 export default Rating;

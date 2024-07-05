@@ -36,7 +36,7 @@ function Logement() {
             <p>{logement.location}</p>
             <Tagslist tags={logement.tags}/>
           </div>
-          <div>
+          <div className="profil_proprietaire">
             <Profil name={nomPrenom} picture={logement.host.picture}/>
             <Rating score={parseInt(logement.rating)}/>
           </div>
