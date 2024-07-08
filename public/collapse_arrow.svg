@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="13.71"
+   height="24"
+   viewBox="0 0 5.14125 9"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="collapse_arrow.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="13.453125"
+     inkscape:cx="31.962834"
+     inkscape:cy="32"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <g
+     id="SVGRepo_bgCarrier"
+     stroke-width="0" />
+  <g
+     id="SVGRepo_tracerCarrier"
+     stroke-linecap="round"
+     stroke-linejoin="round" />
+  <g
+     id="SVGRepo_iconCarrier"
+     style="fill:#ffffff"
+     transform="matrix(0.55699842,0,0,0.4986843,-4.0338368,-1.4840147)">
+    <path
+       d="m 16.1795,3.26875 c -0.3906,-0.39052 -1.0237,-0.39052 -1.4143,0 L 8.12078,9.91322 C 6.94952,11.0845 6.94916,12.9833 8.11996,14.155 l 6.57034,6.5754 c 0.3905,0.3906 1.0237,0.3906 1.4142,0 0.3905,-0.3905 0.3905,-1.0237 0,-1.4142 l -6.57204,-6.572 c -0.39052,-0.3906 -0.39052,-1.0237 0,-1.4142 L 16.1795,4.68297 c 0.3905,-0.39053 0.3905,-1.02369 0,-1.41422 z"
+       fill="#ffffff"
+       id="path1"
+       style="fill:#ffffff" />
+  </g>
+</svg>
