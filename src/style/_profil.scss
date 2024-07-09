@@ -1,0 +1,15 @@
+@use "mixins";
+@use "vars";
+
+.profil {
+    p {
+        @include mixins.font(18px, 25.67px);
+        color: vars.$main_color;
+    }
+
+    img {
+        border-radius: 100%;
+        height: 64px;
+        width: 64px;
+    }
+}

@@ -1,0 +1,20 @@
+@use "vars";
+
+.rating {
+    width: 196px;
+    height: 36px;
+    display: flex;
+    justify-content: flex-end;
+
+    .star {
+        width: 24.75px;
+        height: 24px;
+        mask-image: url("./../../public/star.svg");
+        mask-size: 100%;
+        background-color: #e3e3e3;
+    }
+
+    .filled {
+        background-color: vars.$main_color;
+    }
+}

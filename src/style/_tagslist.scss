@@ -1,0 +1,26 @@
+@use "mixins";
+@use "vars";
+
+.tagslist {
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+        padding: 0;
+
+        li {
+            background-color: vars.$main_color;
+            color: white;
+            border-radius: 10px;
+            min-width: 115px;
+            height: 25px;
+            @include mixins.font(14px, 19.96px, 700);
+            text-align: center;
+            vertical-align: middle;
+
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 3px;
+        }
+    }
+}
