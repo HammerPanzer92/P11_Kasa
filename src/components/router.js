@@ -8,6 +8,7 @@ import {
 import PageNotFound from './PageNotFound';
 import Accueil from './Acceuil';
 import Logement from './Logement';
+import Apropos from './Apropos';
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     {
       path: "/logement/:id",
       element: <Logement />,
+    },
+    {
+      path: "/apropos",
+      element: <Apropos />,
     },
     {
       path: "/404",
