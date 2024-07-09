@@ -20,10 +20,14 @@
         &::after {
             content: url("../../public/collapse_arrow.svg");
             display: block;
+            width: 13.710px;
+            height: 24px;
             position: absolute;
             top: 50%;
             right: 20px;
             transform: translateY(-50%) rotate(270deg);
+            transition: transform 0.2s ease-out;
+            transform-origin: center;
         }
 
         &.active {
