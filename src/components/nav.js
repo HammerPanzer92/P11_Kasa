@@ -10,7 +10,7 @@ function Nav() {
         </div>
         <div>
           <Linknav to="/" name="Acceuil" />
-          <a>A Propos</a>
+          <Linknav to="/apropos" name="A propos" />
         </div>
       </nav>
     </header>

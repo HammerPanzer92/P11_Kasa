@@ -40,4 +40,24 @@
     p {
         @include mixins.font(18px, 25.67px);
     }
+
+    @include mixins.media(){
+        h1{
+            @include mixins.font(18px, 25.67px);
+        }
+
+        p{
+            @include mixins.font(14px, 19.96px);
+        }
+
+        .logement_profil{
+            flex-direction: column;
+        }
+
+        .profil_proprietaire{
+            margin-bottom: 13px;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
 }

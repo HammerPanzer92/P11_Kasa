@@ -28,4 +28,17 @@ nav{
     .active-link{
         text-decoration: underline;
     }
+
+    @include mixins.media(){
+        height: 47px;
+        margin: 20px 20px 27px 20px;
+
+        div:last-child{
+            gap: 26px;
+        }
+
+        a{
+            @include mixins.font(12px, 17.11px);
+        }
+    }
 }

@@ -1,3 +1,5 @@
+@use "mixins";
+
 @use "footer";
 @use "nav";
 @use "pageNotFound";
@@ -11,6 +13,7 @@
 @use "profil";
 @use "tagslist";
 @use "rating";
+@use "apropos";
 
 body{
     margin: 0;
@@ -24,4 +27,11 @@ main{
 a{
     text-decoration: none;
     color: black;
+}
+
+@include mixins.media(){
+    main{
+        margin-left:20px;
+        margin-right:20px;
+    }
 }

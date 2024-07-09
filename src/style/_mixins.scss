@@ -6,3 +6,9 @@
     font-size: $size;
     line-height: $line-height;
 };
+
+@mixin media(){
+    @media screen and (max-width: 768px) {
+        @content
+    }
+}

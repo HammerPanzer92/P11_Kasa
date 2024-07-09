@@ -1,3 +1,5 @@
+@use "mixins";
+
 .carousel-container {
     background-color: #f1f1f1;
     display: flex;
@@ -39,5 +41,24 @@
         align-items: center;
         justify-content: center;
         transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+
+    @include mixins.media(){
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+
+        div{
+            width: 24px;
+            height: 24px;
+
+            &.prevBtn{
+                left: 0px;
+            }
+
+            &.nextBtn{
+                right: 0px;
+            }
+        }
     }
 }

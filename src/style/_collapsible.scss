@@ -50,4 +50,12 @@
             padding: 0;
         }
     }
+
+    @include mixins.media(){
+        .content{
+            p, ul{
+                @include mixins.font(12px, 17.11px, 400);
+            }
+        }
+    }
 }

@@ -1,10 +1,12 @@
 @use "vars";
+@use "mixins";
 
 .rating {
     width: 196px;
     height: 36px;
     display: flex;
     justify-content: flex-end;
+    align-self: center;
 
     .star {
         width: 24.75px;
@@ -12,9 +14,14 @@
         mask-image: url("./../../public/star.svg");
         mask-size: 100%;
         background-color: #e3e3e3;
+        align-self: center;
     }
 
     .filled {
         background-color: vars.$main_color;
+    }
+
+    @include mixins.media(){
+        justify-content: flex-start;
     }
 }

@@ -1,20 +1,21 @@
 @use "mixins";
 
-.banner{
+.banner {
     width: 100%;
     position: relative;
 
-    img{
+    img {
         height: 223px;
         width: 100%;
         object-fit: cover;
+        border-radius: 25px;
     }
 
-    .shadowed{
+    .shadowed {
         filter: brightness(25%);
     }
 
-    p{
+    p {
         @include mixins.font(48px, 68.45px, 700);
         text-shadow: 4px 4px 0px black;
         color: white;
@@ -25,5 +26,21 @@
         margin: 0;
         width: 100%;
         text-align: center;
+    }
+
+    @include mixins.media() {
+        img {
+            border-radius: 10px;
+            height: 111px;
+        }
+
+        p{
+            text-align: left;
+            @include mixins.font(24px, 24px, 700);
+            text-shadow: none;
+            width: 225px;
+            left: 10px;
+            transform: translateY(-50%);
+        }
     }
 }

@@ -23,4 +23,13 @@
             padding-top: 3px;
         }
     }
+
+    @include mixins.media(){
+        ul{
+            li{
+                height: 18px;
+                min-width: 84px;
+            }
+        }
+    }
 }
