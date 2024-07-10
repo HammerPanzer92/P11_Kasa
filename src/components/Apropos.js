@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "./Banner";
 import Collapse from "./Collapse";
-import Nav from "./Nav";
 
 function Apropos() {
   const tabApropos = [
@@ -32,13 +31,10 @@ function Apropos() {
   ));
 
   return (
-    <>
-      <Nav />
-      <main id="apropos">
-        <Banner src="/banner_about.jpg" alt="Banniére A propos" />
-        <div class="collapse_container">{tabDOM}</div>
-      </main>
-    </>
+    <main id="apropos">
+      <Banner src="/banner_about.jpg" alt="Banniére A propos" />
+      <div class="collapse_container">{tabDOM}</div>
+    </main>
   );
 }
 

@@ -1,14 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './style/styles.scss';
-import reportWebVitals from './reportWebVitals';
-import BrowserRouter from './components/Router';
-import Footer from './components/Footer';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./style/styles.scss";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Footer from "./components/Footer";
+import Nav from "./components/Nav";
+import Accueil from "./components/Acceuil";
+import Apropos from "./components/Apropos";
+import PageNotFound from "./components/PageNotFound";
+import Logement from "./components/Logement";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter />
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route path="/" Component={Accueil} />
+        <Route path="/apropos" Component={Apropos} />
+        <Route path="/logement/:id" Component={Logement} />
+        <Route path="*" Component={PageNotFound} />
+      </Routes>
+    </BrowserRouter>
     <Footer />
   </React.StrictMode>
 );
