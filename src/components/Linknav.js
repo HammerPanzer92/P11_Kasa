@@ -7,7 +7,7 @@ function Linknav(props){
 
     if(location.pathname === props.to){
         return (
-            <Link to={props.to} class="active-link"> {props.name} </Link>
+            <Link to={props.to} className="active-link"> {props.name} </Link>
         )
     }else{
         return(

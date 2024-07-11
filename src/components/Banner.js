@@ -4,14 +4,14 @@ function Banner(props) {
 
   if (props.text) {
     return (
-      <div class="banner">
-        <img class="shadowed" src={props.src} alt={props.alt} />
+      <div className="banner">
+        <img className="shadowed" src={props.src} alt={props.alt} />
         <p>{props.text}</p>
       </div>
     );
   } else {
     return(
-        <div class="banner">
+        <div className="banner">
             <img src={props.src} alt={props.alt} />
         </div>
     )

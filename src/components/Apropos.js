@@ -33,7 +33,7 @@ function Apropos() {
   return (
     <main id="apropos">
       <Banner src="/banner_about.jpg" alt="Banniére A propos" />
-      <div class="collapse_container">{tabDOM}</div>
+      <div className="collapse_container">{tabDOM}</div>
     </main>
   );
 }

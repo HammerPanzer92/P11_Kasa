@@ -6,7 +6,7 @@ function Card(props) {
 
   return (
     <Link to={route}>
-      <div class="card-container"><p>{props.title}</p></div>
+      <div className="card-container"><p>{props.title}</p></div>
     </Link>
   );
 }
