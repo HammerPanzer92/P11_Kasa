@@ -4,7 +4,7 @@ import Card from "./Card";
 
 function Gallery(props) {
 
-    const cards = props.liste.map((element, index) => <Card key={index} title={element.title} id={element.id}/>)
+    const cards = props.liste.map((element, index) => <Card key={index} title={element.title} id={element.id} cover={element.cover}/>)
 
     return(
         <div className="gallery">

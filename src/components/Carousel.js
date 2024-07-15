@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 
 const Carousel = (props) => {
   const data = props.images;
@@ -9,10 +9,10 @@ const Carousel = (props) => {
       if (currentIndex === data.length - 1) {
         return setCurrentIndex(0);
       }
-    }else if(increment < 0){
-        if(currentIndex === 0){
-            return setCurrentIndex(data.length - 1);
-        }
+    } else if (increment < 0) {
+      if (currentIndex === 0) {
+        return setCurrentIndex(data.length - 1);
+      }
     }
 
     return setCurrentIndex(currentIndex + increment);
@@ -40,10 +40,20 @@ const Carousel = (props) => {
             />
           );
         })}
-        <div className="nextBtn" onClick={btnPlus}><img src="/arrow.svg" alt="Image suivante"/></div>      
-      <div className="prevBtn" onClick={btnMinus}><img src="/arrow.svg" alt="Image suivante"/></div>    
+        {data.length > 1 && (
+          <>
+            <p className="carousel-compteur">
+              {currentIndex + 1} / {data.length}
+            </p>
+            <div className="nextBtn" onClick={btnPlus}>
+              <img src="/arrow.svg" alt="Photo suivante" />
+            </div>
+            <div className="prevBtn" onClick={btnMinus}>
+              <img src="/arrow.svg" alt="Photo précédente" />
+            </div>
+          </>
+        )}
       </div>
-        
     </>
   );
 };

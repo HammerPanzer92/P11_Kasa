@@ -11,6 +11,16 @@
     
     position: relative;
 
+    .carousel-compteur{
+        position: absolute;
+        left: 50%;
+        bottom: 24.92px;
+        color: white;
+        @include mixins.font(18px, 25.67px);
+        text-align: center;
+        display: block;
+    }
+
     div{
         position: absolute;
         top: 50%;
@@ -47,6 +57,10 @@
         width: 335px;
         height: 255px;
         border-radius: 10px;
+
+        .carousel-compteur{
+            display: none;
+        }
 
         div{
             width: 24px;

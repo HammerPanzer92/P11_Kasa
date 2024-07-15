@@ -6,7 +6,14 @@ function Card(props) {
 
   return (
     <Link to={route}>
-      <div className="card-container"><p>{props.title}</p></div>
+      <div
+        className="card-container"
+        style={{ backgroundImage: `url(${props.cover})` }}
+      >
+        <div className="card-content">
+          <p>{props.title}</p>
+        </div>
+      </div>
     </Link>
   );
 }
